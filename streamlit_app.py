@@ -90,7 +90,13 @@ if page == "🎤  Recognize":
     if total == 0:
         st.warning("No songs in the library yet. Go to **Add Song** to index some music first!")
     else:
-        st.info(f"{total} song{'s' if total != 1 else ''} in library — ready to identify")
+        songs = list_songs()
+        song_names = " · ".join(f"**{s['title']}**" for s in songs)
+        st.info(
+            f"This MVP has **{total} songs** in its library: {song_names}.\n\n"
+            f"Play one of these songs near your mic and Mini Shazam will identify it. "
+            f"*(For reference, Shazam has over 11 million songs — this is just a demo!)*"
+        )
 
     st.markdown("---")
 
