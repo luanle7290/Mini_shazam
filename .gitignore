@@ -1,0 +1,44 @@
+# Database (keep folder structure, ignore the DB file)
+database/fingerprints.db
+
+# Songs library (keep folder structure, ignore audio files)
+songs/*
+!songs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local dev tooling
+.claude/launch.json
+
+# Temp files
+*.tmp
+*.temp
+.gstack/
