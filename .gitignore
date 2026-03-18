@@ -1,5 +1,4 @@
-# Database (keep folder structure, ignore the DB file)
-database/fingerprints.db
+# Database — fingerprints.db is committed so Streamlit Cloud has the pre-built library
 
 # Songs library (keep folder structure, ignore audio files)
 songs/*
