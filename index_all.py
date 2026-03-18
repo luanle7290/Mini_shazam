@@ -26,7 +26,7 @@ def parse_filename(filename: str) -> tuple[str, str]:
       "Hãy Trao Cho Anh - Sơn Tùng.mp3"  →  title="Hãy Trao Cho Anh", artist="Sơn Tùng"
       "Shape Of You.mp3"                  →  title="Shape Of You",       artist=""
     """
-    name = os.path.splitext(filename)[0]   # bỏ đuôi .mp3
+    name = os.path.splitext(filename)[0].replace('_', ' ')   # bỏ đuôi .mp3, chuẩn hóa gạch dưới
     if ' - ' in name:
         title, artist = name.split(' - ', 1)
         return title.strip(), artist.strip()
